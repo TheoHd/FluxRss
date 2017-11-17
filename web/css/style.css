@@ -1,0 +1,68 @@
+img.nav-logo {
+    vertical-align: middle;
+    width: 150px;
+}
+
+nav ul a,
+nav .brand-logo {
+    color: #444;
+}
+@media (max-width: 992px) {
+    .eight-rsp-img {
+        display: none;
+    }
+}
+
+p {
+    line-height: 2rem;
+}
+
+.button-collapse {
+    color: #26a69a;
+}
+
+@media (min-width: 500px){
+    #white-space-handler {
+        margin-bottom: 415px;
+    }
+}
+
+.parallax-container {
+    min-height: 380px;
+    line-height: 0;
+    height: auto;
+    color: rgba(255, 255, 255, .9);
+}
+
+.parallax-container .section {
+    width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+    .parallax-container .section {
+        position: absolute;
+        top: 40%;
+    }
+
+    #index-banner .section {
+        top: 10%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #index-banner .section {
+        top: 0;
+    }
+}
+
+.icon-block {
+    padding: 0 15px;
+}
+
+.icon-block .material-icons {
+    font-size: inherit;
+}
+
+footer.page-footer {
+    margin: 0;
+}
