@@ -1,89 +1,50 @@
 <?php
 
-namespace App;
-
-use EightRss\Controllers\Home;
-use EightRss\Controllers\Admin;
-use EightRss\Controllers\Article;
-use EightRss\Controllers\Disconnect;
-use EightRss\Controllers\Login;
-use EightRss\Controllers\NotFound;
-use EightRss\Controllers\Profile;
-use EightRss\Controllers\Register;
-
+namespace App\Resources;
 /**
- * Class Launcher
+ * Verify the url existence and redirects to the respective controller
  * @package App
  */
 class Launcher
 {
     private $page;
+    private $f;
 
     /**
      * Launcher constructor.
      */
     public function __construct()
     {
-        $this->page = "";
+        $this->f = new Functions;
     }
 
     /**
-     * @var
-     *Retrieve and require the controller
+     * Retrieve and require the controller
      */
     public function start()
     {
-        if (!isset($_GET['page']) || $_GET['page'] == "") {
+        if (!isset($_GET['page']) || $_GET['page'] == "" || empty($_GET['page'])) {
             $this->setPage('home');
-            $this->controllerInit($this->getPage());
+            $this->controllerInit();
         } else {
-            if (!file_exists("src/EightRss/Controllers/" . ucfirst($_GET['page']) . ".php")) {
+            if (!file_exists("src/" . $this->f->getSettings()->{'main_project'}->{'name'} . "/Controllers/" . ucfirst($_GET['page']) . ".php")) {
                 $this->setPage('notFound');
-                $this->controllerInit($this->getPage());
+                $this->controllerInit();
             } else {
                 $this->setPage($_GET['page']);
-                $this->controllerInit($this->getPage());
+                $this->controllerInit();
             }
         }
     }
 
     /**
-     * @param $page
+     * Initialize the controller
      */
-    public function controllerInit($page)
+    public function controllerInit()
     {
-        if ($page == 'admin') {
-            $c = new Admin();
-            $c->start();
-        }
-        if ($page == 'article') {
-            $c = new Article();
-            $c->start();
-        }
-        if ($page == 'disconnect') {
-            $c = new Disconnect();
-            $c->start();
-        }
-        if ($page == 'home') {
-            $c = new Home();
-            $c->start();
-        }
-        if ($page == 'login') {
-            $c = new Login();
-            $c->start();
-        }
-        if ($page == 'not-found') {
-            $c = new NotFound();
-            $c->start();
-        }
-        if ($page == 'profile') {
-            $c = new Profile();
-            $c->start();
-        }
-        if ($page == 'register') {
-            $c = new Register();
-            $c->start();
-        }
+        $name = $this->f->getSettings()->{'main_project'}->{'name'} . '\\' .'Controllers' .'\\' . ucfirst($this->getPage());
+        $c = new $name;
+        $c->start();
     }
 
     /**
