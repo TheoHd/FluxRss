@@ -8,9 +8,9 @@
 
 namespace EightRss\Controllers;
 
-use App\Functions;
+use App\Resources\Functions;
 use EightRss\Models\User;
-use App\Materialize;
+use App\Resources\Materialize;
 
 class Login extends Functions
 {

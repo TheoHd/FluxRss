@@ -6,7 +6,7 @@
  * Time: 21:01
  */
 
-namespace App;
+namespace App\Resources;
 
 
 class Materialize

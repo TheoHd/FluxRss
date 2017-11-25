@@ -14,7 +14,7 @@ define('CORE', ROOT . DS . 'core');
 
 require "vendor/autoload.php";
 
-use App\Launcher;
+use App\Resources\Launcher;
 
 //Initialize & launch app
 $launcher = new Launcher();

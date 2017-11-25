@@ -8,7 +8,7 @@
 
 namespace EightRss\Models;
 
-use App\Functions;
+use App\Resources\Functions;
 use PDO;
 
 class User

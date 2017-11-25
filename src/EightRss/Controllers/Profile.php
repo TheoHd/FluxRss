@@ -8,7 +8,7 @@
 
 namespace EightRss\Controllers;
 
-use App\Functions;
+use App\Resources\Functions;
 use EightRss\Models\User;
 
 class Profile extends Functions
