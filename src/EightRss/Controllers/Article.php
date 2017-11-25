@@ -16,7 +16,3 @@ class Article extends Functions
         $this->display('article', array('user' => $user,'flux' => $flux));
     }
 }
-
-// TODO getArticleId
-// TODO shareArticle
-// TODO commentArticle

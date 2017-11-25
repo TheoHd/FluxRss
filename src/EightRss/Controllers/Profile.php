@@ -19,5 +19,3 @@ class Profile extends Functions
         $this->display('profile', array('user' => $user));
     }
 }
-
-// TODO Verify isConnected & isUser

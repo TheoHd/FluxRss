@@ -31,7 +31,3 @@ class Login extends Functions
         $this->display('login', array('user' => $user,'form' => $form));
     }
 }
-
-// TODO Verify isConnected
-// TODO Remember Me
-// TODO BanSystem
