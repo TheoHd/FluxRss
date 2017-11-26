@@ -31,14 +31,12 @@ class User
     }
     public function login(){
         global $db;
-        $request = $db->prepare("SELECT * FROM user WHERE login = ? AND password = ?");
-        $request->execute([
-            $_POST['login'],
-            sha1($_POST['password'])
-        ]);
-        $this->sql_check_error($request);
-
-
+        $login = $_POST['login'];
+        $password = sha1($_POST['password']);
+        $request = $db->prepare('SELECT * FROM user WHERE login = :login AND password = :password');
+        $request->bindParam(':login',$login,PDO::PARAM_STR);
+        $request->bindParam(':password',$password,PDO::PARAM_STR);
+        $request->execute();
         if ($response = $request->fetch()) {
             $_SESSION['connected'] = true;
             $_SESSION['id'] = $response['id_u'];
@@ -66,7 +64,7 @@ class User
         $request->bindValue(":telephone", $_POST['telephone'], PDO::PARAM_STR);
         $request->bindValue(":address", $_POST['address'], PDO::PARAM_STR);
         $request->execute();
-        $this->sql_check_error($request);
+        $this->sql_check_error();
         $f->redirect('/login/1');
         exit();
     }
@@ -91,10 +89,5 @@ class User
     public function rememberMe($loginconnect,$passwordconnect){
         setcookie('email',$loginconnect,time()+365*24*3600,null,null,false,true);
         setcookie('password',$passwordconnect,time()+365*24*3600,null,null,false,true);
-    }
-    function sql_check_error($statement){
-        global $db;
-        $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $db->exec($statement);
     }
 }

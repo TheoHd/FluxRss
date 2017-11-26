@@ -17,6 +17,17 @@ p {
     line-height: 2rem;
 }
 
+.article-links{
+    transition:0.5s;
+}
+.article-links:hover a{
+    color:white;
+}
+
+.image-url-home{
+    width:100%;
+}
+
 .button-collapse {
     color: #26a69a;
 }

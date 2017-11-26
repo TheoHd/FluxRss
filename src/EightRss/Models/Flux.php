@@ -7,28 +7,50 @@
  */
 
 namespace EightRss\Models;
-
-use PDO;
-
+/**
+ * Class Flux
+ * @package EightRss\Models
+ */
 class Flux
 {
-    public function sql_check_error()
+    /**
+     * @var Length of the flux
+     */
+    private $fluxLength;
+    /**
+     * @var Array containing all articles from the flux
+     */
+    private $fluxItems;
+
+    /**
+     * Flux constructor.
+     */
+    public function __construct()
     {
-        global $db;
-        $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $this->fluxItems = $this->dbFluxItems();
+        $this->fluxLength = $this->dbFluxLength();
     }
 
-    public function addFlux()
+    /**
+     * @return Array
+     */
+    public function getFluxItems()
     {
-        global $db;
-        $db->prepare('INSERT INTO flux VALUES()');
-    }
-    public function insertFluxIntoDb(){
-        global $db;
-        $db->prepare('INSERT INTO flux VALUES()');
+        return $this->fluxItems;
     }
 
-    public function getFlux()
+    /**
+     * @return Length
+     */
+    public function getFluxLength()
+    {
+        return $this->fluxLength;
+    }
+
+    /**
+     * @return array
+     */
+    private function dbFluxItems()
     {
         global $db;
         $req1 = $db->query("SELECT * FROM flux");
@@ -40,15 +62,14 @@ class Flux
         }
         return $base_array;
     }
-    public function getFluxNbOfElements(){
-            global $db;
-            $req = $db->query("SELECT COUNT(*) FROM flux");
-            return (int)$req->fetch()[0];
-    }
-    public function stockArticlesInBdd($title){
+
+    /**
+     * @return int
+     */
+    private function dbFluxLength()
+    {
         global $db;
-        $req = $db->prepare("INSERT INTO article VALUES (:title,:content,:date_release)");
-        //$req->bindValue(':title', $title, );
+        $req = $db->query("SELECT COUNT(*) FROM flux");
         return (int)$req->fetch()[0];
     }
 }

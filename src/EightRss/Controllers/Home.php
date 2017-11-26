@@ -3,7 +3,7 @@
 namespace EightRss\Controllers;
 
 use App\Resources\Functions;
-use EightRss\Models\Flux;
+use EightRss\Models\Article;
 use EightRss\Models\User;
 
 class Home extends Functions
@@ -11,10 +11,10 @@ class Home extends Functions
 
     public function start()
     {
-        $flux = new Flux();
+        $article = new Article();
         $user = new User();
-        $homeFlux = $flux->getFlux();
-        //$flux->stockArticlesInBdd();
-        $this->display('home', array('homeFlux' => $homeFlux,'flux' => $flux, 'user' => $user));
+        $article->verifyArticlesAreInDatabase();
+        $articles = $article->displayArticles();
+        $this->display('home', array('articles' => $articles, 'user' => $user));
     }
 }
