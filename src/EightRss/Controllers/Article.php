@@ -12,6 +12,7 @@ class Article extends Functions
     {
         $article = new \EightRss\Models\Article();
         $user = new User();
+        $article = $article->displayArticle();
         $this->display('article', array('user' => $user,'article' => $article));
     }
 }
