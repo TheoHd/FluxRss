@@ -29,16 +29,16 @@ class User
             return false;
         }
     }
-    // TODO Finish isBanned
-    public function isBanned(){
-
-    }
     public function login(){
         global $db;
-        $f = new Functions();
-        $login = $_POST['login'];
-        $password = sha1($_POST['password']);
-        $request = $db->query("SELECT * FROM user WHERE login ='" . $login . "' AND password = '" . $password . "'");
+        $request = $db->prepare("SELECT * FROM user WHERE login = ? AND password = ?");
+        $request->execute([
+            $_POST['login'],
+            sha1($_POST['password'])
+        ]);
+        $this->sql_check_error($request);
+
+
         if ($response = $request->fetch()) {
             $_SESSION['connected'] = true;
             $_SESSION['id'] = $response['id_u'];
@@ -49,14 +49,11 @@ class User
             $_SESSION['firstname'] = $response['firstname'];
             $_SESSION['telephone'] = $response['telephone'];
             $_SESSION['address'] = $response['address'];
-            $f->redirect('/profile');
-            exit();
-        }
-        else{
-            return false;
+            if(isset($_POST['rememberMe']) && $_POST['rememberMe'] == 'on'){
+                $this->rememberMe();
+            }
         }
     }
-    //TODO Get this to work
     public function register(){
         global $db;
         $f = new Functions();
@@ -86,7 +83,6 @@ class User
         $request = $db->prepare('SELECT * WHERE id_u = '.$_GET['id']);
         $request->execute();
     }
-    // TODO Finish getUserBanState
     public function getUserBanState(){
         global $db;
         $request = $db->prepare('SELECT lvl WHERE id_u = '.$_GET['id']);
@@ -96,9 +92,9 @@ class User
         setcookie('email',$loginconnect,time()+365*24*3600,null,null,false,true);
         setcookie('password',$passwordconnect,time()+365*24*3600,null,null,false,true);
     }
-    public function sql_check_error()
-    {
+    function sql_check_error($statement){
         global $db;
         $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $db->exec($statement);
     }
 }

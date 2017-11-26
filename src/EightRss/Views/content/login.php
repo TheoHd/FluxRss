@@ -1,7 +1,3 @@
-<!--TODO Verify responsivity-->
-<!--TODO Captcha + rememberMe-->
-<!--TODO Ban system-->
-<!--TODO Secure inputs and url-->
 <div class="container" id="white-space-handler">
     <div class="row">
         <form class="col s12" method="post" action="#">

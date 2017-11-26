@@ -1,6 +1,3 @@
-<!--TODO Verify responsivity-->
-<!--TODO Secure inputs and url-->
-
 <div class="container">
     <div class="row">
         <form class="col s12" method="post" action="#">

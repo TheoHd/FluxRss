@@ -51,17 +51,4 @@ class Flux
         //$req->bindValue(':title', $title, );
         return (int)$req->fetch()[0];
     }
-    // TODO Add addFlux
-    // TODO Add changeFlux
-    // TODO Add deleteFlux
-
-    // TODO Add getFlux
-    // TODO Add getInfoFlux
-
-    // TODO Add getArticle
-    // TODO Add getInfoArticle
-
-    // TODO Add getTheme
-    // TODO Add deleteTheme
-    // TODO Add getInfoTheme
 }

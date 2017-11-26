@@ -48,7 +48,7 @@ class Materialize
     public function checkboxMtz($name, $label)
     {
         $html = '<p>';
-        $html .= '<input type="checkbox" id="' . $name . '" />';
+        $html .= '<input type="checkbox" name="' . $name . '" id="' . $name . '" />';
         $html .= '<label for="' . $name . '">' . $label . '</label>';
         $html .= '</p>';
         return $html;

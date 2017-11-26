@@ -1,5 +1,3 @@
-<!--TODO Verify responsivity-->
-<!--TODO Secure inputs and url-->
 <div class="container">
     <div class="section">
         <div class="row">

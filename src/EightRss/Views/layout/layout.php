@@ -1,4 +1,3 @@
-<!--TODO Verify responsivity-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,15 +19,10 @@
         <a id="logo-container" href="<?= BASE_URL ?>/home" class="brand-logo"><img class="nav-logo" src="<?= BASE_URL ?>/web/img/logo.png"
                                                                 alt=""></a>
         <ul class="right hide-on-med-and-down">
-            <!--            TODO Method isConnected in User-->
-            <!--            TODO Method isAdmin in User-->
             <?php if ($object['user']->isAdmin()) : ?>
-                <!--                TODO Add admin page in launcher and verify controller-->
                 <li><a href="<?= BASE_URL ?>/admin"><span class="color-3">Administration</span></a></li>
             <?php endif ?>
             <?php if ($object['user']->isConnected()) : ?>
-                <!--                TODO Add user page in launcher and verify controller-->
-                <!--                TODO Add page login in launcher and verify in controller-->
                 <li><a href="<?= BASE_URL ?>/profile"><span class="color-3">Profil</span></a></li>
                 <li><a href="<?= BASE_URL ?>/disconnect"><span class="color-3">Se déconnecter</span></a></li>
             <?php else : ?>

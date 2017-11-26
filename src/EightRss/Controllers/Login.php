@@ -22,10 +22,9 @@ class Login extends Functions
            $this->redirect('/profile');
         }
         if(isset($_POST['submit'])){
-            if(isset($_POST['rememberMe']) && $_POST['rememberMe'] == true){
-                $user->rememberMe();
-            }
             $user->login();
+            $this->redirect('/profile');
+            exit();
         }
         $form = $materialize->loginMtz();
         $this->display('login', array('user' => $user,'form' => $form));
