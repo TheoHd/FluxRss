@@ -51,12 +51,12 @@ class Article
 
 
     /**
-     * Display the articles that are in database in descending order by date
+     * Display the articles that are in database in descending order by date and time
      */
     public function displayArticles()
     {
         global $db;
-        $request = $db->prepare('SELECT * FROM article ORDER BY YEAR(pubDate) DESC, MONTH(pubDate) DESC, DAY(pubDate) DESC');
+        $request = $db->prepare('SELECT * FROM article ORDER BY YEAR(pubDate) DESC, MONTH(pubDate) DESC, DAY(pubDate) DESC, TIME(pubDate) DESC');
         $request->execute();
         return $request;
     }
