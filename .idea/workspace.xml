@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c97a3c4-85be-4416-9a98-5f616349ed69" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EightRss/Controllers/Home.php" afterPath="$PROJECT_DIR$/src/EightRss/Controllers/Home.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EightRss/Models/Article.php" afterPath="$PROJECT_DIR$/src/EightRss/Models/Article.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EightRss/Views/content/home.php" afterPath="$PROJECT_DIR$/src/EightRss/Views/content/home.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/palette.css" afterPath="$PROJECT_DIR$/web/css/palette.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EightRss/Views/content/article.php" afterPath="$PROJECT_DIR$/src/EightRss/Views/content/article.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,11 +24,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".htaccess" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".htaccess" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.htaccess">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="104">
               <caret line="4" column="49" lean-forward="false" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="article.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/EightRss/Views/content/article.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="78">
+              <caret line="3" column="25" lean-forward="true" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -211,7 +216,6 @@
         <option value="$PROJECT_DIR$/src/EightRss/Views/content/profile.php" />
         <option value="$PROJECT_DIR$/web/css/style.css" />
         <option value="$PROJECT_DIR$/src/EightRss/Controllers/Article.php" />
-        <option value="$PROJECT_DIR$/src/EightRss/Views/content/article.php" />
         <option value="$PROJECT_DIR$/src/EightRss/Views/content/not-found.php" />
         <option value="$PROJECT_DIR$/src/EightRss/Views/layout/layout.php" />
         <option value="$PROJECT_DIR$/src/EightRss/Models/Flux.php" />
@@ -226,6 +230,7 @@
         <option value="$PROJECT_DIR$/web/content/404.html" />
         <option value="$PROJECT_DIR$/web/content/404.php" />
         <option value="$PROJECT_DIR$/.htaccess" />
+        <option value="$PROJECT_DIR$/src/EightRss/Views/content/article.php" />
       </list>
     </option>
   </component>
@@ -732,12 +737,12 @@
       <workItem from="1511652513908" duration="4170000" />
       <workItem from="1511692991212" duration="19452000" />
       <workItem from="1511764643366" duration="2442000" />
-      <workItem from="1511767600901" duration="5864000" />
+      <workItem from="1511767600901" duration="5962000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97884000" />
+    <option name="totallyTimeSpent" value="97982000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1058,13 +1063,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/EightRss/Views/content/article.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1924">
-          <caret line="74" column="22" lean-forward="true" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/EightRss/Views/content/admin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1248">
@@ -1216,6 +1214,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
           <caret line="4" column="49" lean-forward="false" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EightRss/Views/content/article.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="3" column="25" lean-forward="true" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
           <folding />
         </state>
       </provider>
