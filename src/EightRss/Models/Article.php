@@ -22,7 +22,7 @@ class Article
      */
     private $flux;
     /**
-     * @var Functions
+     * @var @Functions
      */
     private $f;
 
@@ -51,12 +51,31 @@ class Article
 
 
     /**
-     * Display the articles that are in database in descending order by date and time
+     * @param $per_page
+     * @param $c_page
+     * @return \PDOStatement
      */
-    public function displayArticles()
+    public function displayArticles($per_page,$c_page)
     {
         global $db;
-        $request = $db->prepare('SELECT * FROM article ORDER BY YEAR(pubDate) DESC, MONTH(pubDate) DESC, DAY(pubDate) DESC, TIME(pubDate) DESC');
+        $nb_art = $this->nbArticles()->fetch();
+        $l_elem = ($c_page-1)*$per_page;
+        $nb_page = ceil($nb_art[0]/$per_page);
+        $request = $db->prepare('SELECT * FROM article ORDER BY YEAR(pubDate) DESC, MONTH(pubDate) DESC, DAY(pubDate) DESC, TIME(pubDate) DESC LIMIT :l_elem, :per_page');
+        $request->bindParam(':l_elem',$l_elem,PDO::PARAM_INT);
+        $request->bindParam(':per_page',$per_page,PDO::PARAM_INT);
+        $request->execute();
+        return array($request,$nb_page);
+    }
+
+    /**
+     * @return \PDOStatement
+     * Retrieve number of articles. Useful for pagination
+     */
+    public function nbArticles()
+    {
+        global $db;
+        $request = $db->prepare('SELECT COUNT(*) FROM article');
         $request->execute();
         return $request;
     }
@@ -73,7 +92,7 @@ class Article
     }
 
     /**
-     * @param $guide
+     * @param $title
      * @return bool
      * Verify if a single article is in database
      */

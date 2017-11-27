@@ -14,7 +14,12 @@ class Home extends Functions
         $article = new Article();
         $user = new User();
         $article->verifyArticlesAreInDatabase();
-        $articles = $article->displayArticles();
+        if(isset($_GET['id'])){
+            $c_page = $_GET['id'];
+        }else{
+            $c_page = 1;
+        }
+        $articles = $article->displayArticles(15,$c_page);
         $this->display('home', array('articles' => $articles, 'user' => $user));
     }
 }

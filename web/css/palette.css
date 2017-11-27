@@ -39,3 +39,8 @@
 .border-color-4{
     border: 1px solid #0B2216;
 }
+
+/* Overwritten materialize properties */
+.active{
+	background-color: #329572 !important;
+}
