@@ -116,6 +116,10 @@ class Article
         $request->execute();
     }
 
+    /**
+     * @param $property
+     * @return string
+     */
     private function verifyPropertyExistence($property)
     {
         if (isset($property) && !empty($property)) {
@@ -125,6 +129,10 @@ class Article
         }
     }
 
+    /**
+     * @param $link
+     * @return null
+     */
     private function verifyLinkExistence($link)
     {
         if (isset($link) && !empty($link)) {
@@ -134,6 +142,11 @@ class Article
         }
     }
 
+    /**
+     * @param $url
+     * @param $attributes
+     * @return null
+     */
     private function verifyImageUrlExistence($url, $attributes)
     {
         if (isset($url) && !empty($attributes) && !is_null($attributes)) {

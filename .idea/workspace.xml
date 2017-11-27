@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c97a3c4-85be-4416-9a98-5f616349ed69" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EightRss/Models/Article.php" afterPath="$PROJECT_DIR$/src/EightRss/Models/Article.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -95,14 +94,14 @@
       <file leaf-file-name="Article.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/EightRss/Models/Article.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="134" column="5" lean-forward="true" selection-start-line="134" selection-start-column="5" selection-end-line="134" selection-end-column="5" />
+            <state relative-caret-position="416">
+              <caret line="30" column="7" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
               <folding>
                 <element signature="e#117#145#0#PHP" expanded="true" />
-                <marker date="1511766829692" expanded="true" signature="1127:1216" ph="SELECT * FRO... article" />
-                <marker date="1511766829692" expanded="true" signature="1420:1456" ph="SELECT * FRO... article" />
-                <marker date="1511766829692" expanded="true" signature="1748:1794" ph="SELECT title... article" />
-                <marker date="1511766829692" expanded="true" signature="2767:2924" ph="INSERT INTO article... " />
+                <marker date="1511767028112" expanded="true" signature="1127:1216" ph="SELECT * FRO... article" />
+                <marker date="1511767028112" expanded="true" signature="1420:1456" ph="SELECT * FRO... article" />
+                <marker date="1511767028112" expanded="true" signature="1748:1794" ph="SELECT title... article" />
+                <marker date="1511767028112" expanded="true" signature="2767:2924" ph="INSERT INTO article... " />
               </folding>
             </state>
           </provider>
@@ -684,12 +683,12 @@
       <workItem from="1511356472542" duration="11506000" />
       <workItem from="1511652513908" duration="4170000" />
       <workItem from="1511692991212" duration="19452000" />
-      <workItem from="1511764643366" duration="1947000" />
+      <workItem from="1511764643366" duration="2010000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91525000" />
+    <option name="totallyTimeSpent" value="91588000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1156,14 +1155,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/EightRss/Models/Article.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="134" column="5" lean-forward="true" selection-start-line="134" selection-start-column="5" selection-end-line="134" selection-end-column="5" />
+        <state relative-caret-position="416">
+          <caret line="30" column="7" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
           <folding>
             <element signature="e#117#145#0#PHP" expanded="true" />
-            <marker date="1511766829692" expanded="true" signature="1127:1216" ph="SELECT * FRO... article" />
-            <marker date="1511766829692" expanded="true" signature="1420:1456" ph="SELECT * FRO... article" />
-            <marker date="1511766829692" expanded="true" signature="1748:1794" ph="SELECT title... article" />
-            <marker date="1511766829692" expanded="true" signature="2767:2924" ph="INSERT INTO article... " />
+            <marker date="1511767028112" expanded="true" signature="1127:1216" ph="SELECT * FRO... article" />
+            <marker date="1511767028112" expanded="true" signature="1420:1456" ph="SELECT * FRO... article" />
+            <marker date="1511767028112" expanded="true" signature="1748:1794" ph="SELECT title... article" />
+            <marker date="1511767028112" expanded="true" signature="2767:2924" ph="INSERT INTO article... " />
           </folding>
         </state>
       </provider>
