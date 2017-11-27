@@ -49,6 +49,29 @@ class Article
         }
     }
 
+
+    /**
+     * Display the articles that are in database in descending order by date
+     */
+    public function displayArticles()
+    {
+        global $db;
+        $request = $db->prepare('SELECT * FROM article ORDER BY YEAR(pubDate) DESC, MONTH(pubDate) DESC, DAY(pubDate) DESC');
+        $request->execute();
+        return $request;
+    }
+
+    /**
+     * Display one article
+     */
+    public function displayArticle()
+    {
+        global $db;
+        $request = $db->prepare('SELECT * FROM article WHERE id_a = ?');
+        $request->execute([$_GET['id']]);
+        return $request;
+    }
+
     /**
      * @param $guide
      * @return bool
@@ -73,18 +96,14 @@ class Article
     private function addArticleInDatabase($item)
     {
         global $db;
-        $title = $item->title;
-        $pubDate = $item->pubDate;
+        $title = $this->verifyPropertyExistence($item->title);
+        $pubDate = $this->verifyPropertyExistence($item->pubDate);
         $pubDate = strftime("%Y-%m-%d %H:%M:%S", strtotime($pubDate));
-        $category = $item->category;
-        $guide = $item->guide;
-        $description = $item->description;
-        $link = $item->link;
-        if (isset($item->enclosure->attributes()->url) && !empty($item->enclosure->attributes()) && !is_null($item->enclosure->attributes())) {
-            $image_url = $item->enclosure->attributes()->url;
-        }else{
-            $image_url = null;
-        }
+        $category = $this->verifyPropertyExistence($item->category);
+        $guide = $this->verifyPropertyExistence($item->guide);
+        $description = $this->verifyPropertyExistence($item->description);
+        $link = $this->verifyLinkExistence($item->link);
+        $image_url = $this->verifyImageUrlExistence($item->enclosure->attributes()->url, $item->enclosure->attributes());
         $request = $db->prepare('INSERT INTO article(title,description,pubDate,guide,link,category,image_url) 
         VALUES (:title,:description,:pubDate,:guide,:link,:category,:image_url)');
         $request->bindParam(':title', $title, PDO::PARAM_STR);
@@ -97,25 +116,30 @@ class Article
         $request->execute();
     }
 
-    /**
-     * Display the articles that are in database in descending order by date
-     */
-    public function displayArticles()
+    private function verifyPropertyExistence($property)
     {
-        global $db;
-        $request = $db->prepare('SELECT * FROM article ORDER BY YEAR(pubDate) DESC, MONTH(pubDate) DESC, DAY(pubDate) DESC');
-        $request->execute();
-        return $request;
-    }
-    /**
-     * Display one article
-     */
-    public function displayArticle()
-    {
-        global $db;
-        $request = $db->prepare('SELECT * FROM article WHERE id_a = ?');
-        $request->execute([$_GET['id']]);
-        return $request;
+        if (isset($property) && !empty($property)) {
+            return $property;
+        } else {
+            return 'Non spécifié';
+        }
     }
 
+    private function verifyLinkExistence($link)
+    {
+        if (isset($link) && !empty($link)) {
+            return $link;
+        } else {
+            return null;
+        }
+    }
+
+    private function verifyImageUrlExistence($url, $attributes)
+    {
+        if (isset($url) && !empty($attributes) && !is_null($attributes)) {
+            return $url;
+        } else {
+            return null;
+        }
+    }
 }

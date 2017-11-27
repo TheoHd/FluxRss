@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c97a3c4-85be-4416-9a98-5f616349ed69" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/EightRss/Views/content/rss.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EightRss/Controllers/Admin.php" afterPath="$PROJECT_DIR$/src/EightRss/Controllers/Admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EightRss/Controllers/Article.php" afterPath="$PROJECT_DIR$/src/EightRss/Controllers/Article.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EightRss/Models/Flux.php" afterPath="$PROJECT_DIR$/src/EightRss/Models/Flux.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EightRss/Views/content/admin.php" afterPath="$PROJECT_DIR$/src/EightRss/Views/content/admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EightRss/Views/content/article.php" afterPath="$PROJECT_DIR$/src/EightRss/Views/content/article.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EightRss/Views/content/not-found.php" afterPath="$PROJECT_DIR$/src/EightRss/Views/content/not-found.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EightRss/Views/layout/layout.php" afterPath="$PROJECT_DIR$/src/EightRss/Views/layout/layout.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EightRss/Models/Article.php" afterPath="$PROJECT_DIR$/src/EightRss/Models/Article.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,7 +28,7 @@
       <file leaf-file-name="Launcher.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/resources/Launcher.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="695">
+            <state relative-caret-position="669">
               <caret line="30" column="35" lean-forward="false" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
               <folding />
             </state>
@@ -46,8 +38,8 @@
       <file leaf-file-name="Materialize.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/resources/Materialize.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1040">
-              <caret line="48" column="5" lean-forward="true" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+            <state relative-caret-position="669">
+              <caret line="48" column="5" lean-forward="false" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -56,7 +48,7 @@
       <file leaf-file-name="Flux.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/EightRss/Models/Flux.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="539">
+            <state relative-caret-position="97">
               <caret line="141" column="33" lean-forward="false" selection-start-line="141" selection-start-column="33" selection-end-line="141" selection-end-column="33" />
               <folding>
                 <element signature="e#6#87#0#PHP" expanded="true" />
@@ -69,12 +61,9 @@
                 <marker date="1511718901600" expanded="true" signature="1940:2099" ph="UPDATE table... " />
                 <marker date="1511718901600" expanded="true" signature="1940:2114" ph="UPDATE flux " />
                 <marker date="1511718901600" expanded="true" signature="1940:2115" ph="UPDATE table... " />
-                <marker date="1511718901600" expanded="true" signature="1940:2116" ph="UPDATE table... " />
-                <marker date="1511718901600" expanded="true" signature="1940:2410" ph="UPDATE table... " />
                 <marker date="1511718901600" expanded="true" signature="2476:2598" ph="UPDATE flux " />
                 <marker date="1511718901600" expanded="true" signature="2897:3017" ph="UPDATE flux " />
                 <marker date="1511718901600" expanded="true" signature="3491:3526" ph="DELETE FROM " />
-                <marker date="1511718901600" expanded="true" signature="3502:3513" ph="INSERT INTO flux... " />
                 <marker date="1511718901600" expanded="true" signature="3763:3781" ph="SELECT * FRO... flux" />
               </folding>
             </state>
@@ -84,7 +73,7 @@
       <file leaf-file-name="Admin.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/EightRss/Controllers/Admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
+            <state relative-caret-position="910">
               <caret line="40" column="88" lean-forward="false" selection-start-line="40" selection-start-column="88" selection-end-line="40" selection-end-column="88" />
               <folding>
                 <element signature="e#122#150#0#PHP" expanded="true" />
@@ -93,12 +82,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="admin.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/EightRss/Views/content/admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
+            <state relative-caret-position="1248">
               <caret line="48" column="104" lean-forward="false" selection-start-line="48" selection-start-column="104" selection-end-line="48" selection-end-column="104" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Article.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/EightRss/Models/Article.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="383">
+              <caret line="134" column="5" lean-forward="true" selection-start-line="134" selection-start-column="5" selection-end-line="134" selection-end-column="5" />
+              <folding>
+                <element signature="e#117#145#0#PHP" expanded="true" />
+                <marker date="1511766829692" expanded="true" signature="1127:1216" ph="SELECT * FRO... article" />
+                <marker date="1511766829692" expanded="true" signature="1420:1456" ph="SELECT * FRO... article" />
+                <marker date="1511766829692" expanded="true" signature="1748:1794" ph="SELECT title... article" />
+                <marker date="1511766829692" expanded="true" signature="2767:2924" ph="INSERT INTO article... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -106,7 +111,7 @@
       <file leaf-file-name="layout.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/EightRss/Views/layout/layout.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-31">
+            <state relative-caret-position="1196">
               <caret line="66" column="116" lean-forward="false" selection-start-line="66" selection-start-column="116" selection-end-line="66" selection-end-column="116" />
               <folding />
             </state>
@@ -208,7 +213,6 @@
         <option value="$PROJECT_DIR$/src/EightRss/Models/User.php" />
         <option value="$PROJECT_DIR$/src/EightRss/Views/content/profile.php" />
         <option value="$PROJECT_DIR$/src/EightRss/Controllers/Home.php" />
-        <option value="$PROJECT_DIR$/src/EightRss/Models/Article.php" />
         <option value="$PROJECT_DIR$/web/css/style.css" />
         <option value="$PROJECT_DIR$/src/EightRss/Views/content/home.php" />
         <option value="$PROJECT_DIR$/src/EightRss/Controllers/Article.php" />
@@ -219,6 +223,7 @@
         <option value="$PROJECT_DIR$/src/EightRss/Models/Flux.php" />
         <option value="$PROJECT_DIR$/src/EightRss/Controllers/Admin.php" />
         <option value="$PROJECT_DIR$/src/EightRss/Views/content/admin.php" />
+        <option value="$PROJECT_DIR$/src/EightRss/Models/Article.php" />
       </list>
     </option>
   </component>
@@ -678,12 +683,13 @@
       <workItem from="1511339751930" duration="4092000" />
       <workItem from="1511356472542" duration="11506000" />
       <workItem from="1511652513908" duration="4170000" />
-      <workItem from="1511692991212" duration="19368000" />
+      <workItem from="1511692991212" duration="19452000" />
+      <workItem from="1511764643366" duration="1947000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89494000" />
+    <option name="totallyTimeSpent" value="91525000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -704,17 +710,17 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32997987" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -895,9 +901,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1507254304616" expanded="true" signature="145:211" ph="SELECT * FRO... users" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -915,128 +918,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-419">
           <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-          <folding>
-            <marker date="1494790853531" expanded="true" signature="1453:1500" ph="SELECT * FRO... users" />
-            <marker date="1494790853531" expanded="true" signature="2285:2319" ph="SELECT * FRO... users" />
-            <marker date="1494790853531" expanded="true" signature="2877:2939" ph="INSERT INTO users... " />
-            <marker date="1494790853531" expanded="true" signature="3017:3072" ph="SELECT id_u,... users" />
-            <marker date="1494790853531" expanded="true" signature="3200:3265" ph="INSERT INTO friends... " />
-            <marker date="1494790853531" expanded="true" signature="3932:4129" ph="SELECT DISTI... users" />
-            <marker date="1494790853531" expanded="true" signature="4187:4877" ph="..." />
-            <marker date="1494790853531" expanded="true" signature="4226:4864" ph="..." />
-            <marker date="1494790853531" expanded="true" signature="4258:4367" ph="..." />
-            <marker date="1494790853531" expanded="false" signature="4291:4314" ph="..." />
-            <marker date="1494790853531" expanded="true" signature="4399:4539" ph="..." />
-            <marker date="1494790853531" expanded="false" signature="4433:4445" ph="..." />
-            <marker date="1494790853531" expanded="true" signature="4659:4851" ph="..." />
-            <marker date="1494790853531" expanded="true" signature="5372:5708" ph="SELECT DISTI... users" />
-            <marker date="1494790853531" expanded="true" signature="6449:6773" ph="SELECT DISTI... users" />
-            <marker date="1494790853531" expanded="true" signature="7364:7386" ph="SELECT * fro... comments" />
-            <marker date="1494790853531" expanded="true" signature="8585:8623" ph="SELECT * FRO... comments" />
-            <marker date="1494790853531" expanded="true" signature="8747:10616" ph="..." />
-            <marker date="1494790853531" expanded="true" signature="8787:10585" ph="..." />
-            <marker date="1494790853531" expanded="true" signature="8871:10552" ph="..." />
-            <marker date="1494790853531" expanded="true" signature="8937:9601" ph="..." />
-            <marker date="1494790853531" expanded="true" signature="9667:10517" ph="..." />
-            <marker date="1494790853531" expanded="true" signature="9727:9862" ph="..." />
-            <marker date="1494790853531" expanded="true" signature="9945:10478" ph="..." />
-            <marker date="1494790853531" expanded="true" signature="10690:10735" ph="SELECT * FRO... comments" />
-            <marker date="1494790853531" expanded="true" signature="10847:11764" ph="..." />
-            <marker date="1494790853531" expanded="true" signature="10878:11014" ph="..." />
-            <marker date="1494790853531" expanded="false" signature="10908:10949" ph="..." />
-            <marker date="1494790853531" expanded="true" signature="11054:11201" ph="..." />
-            <marker date="1494790853531" expanded="true" signature="11236:11365" ph="..." />
-            <marker date="1494790853531" expanded="true" signature="11402:11471" ph="..." />
-            <marker date="1494790853531" expanded="true" signature="11511:11749" ph="..." />
-            <marker date="1494790853531" expanded="true" signature="11902:11996" ph="INSERT INTO comments... " />
-            <marker date="1494790853531" expanded="true" signature="12162:12194" ph="SELECT * FRO... users" />
-            <marker date="1494790853531" expanded="true" signature="12436:12468" ph="SELECT * FRO... users" />
-            <marker date="1494790853531" expanded="true" signature="12656:12688" ph="SELECT * FRO... users" />
-            <marker date="1494790853531" expanded="true" signature="13029:13084" ph="SELECT * FRO... users" />
-            <marker date="1494790853531" expanded="true" signature="13202:13267" ph="INSERT INTO friends... " />
-            <marker date="1494790853531" expanded="true" signature="14008:14090" ph="UPDATE frien... " />
-            <marker date="1494790853531" expanded="true" signature="14157:14263" ph="UPDATE frien... " />
-            <marker date="1494790853531" expanded="true" signature="14714:14794" ph="UPDATE frien... " />
-            <marker date="1494790853531" expanded="true" signature="14861:14941" ph="UPDATE frien... " />
-            <marker date="1494790853531" expanded="true" signature="15275:15468" ph="UPDATE frien... " />
-            <marker date="1494790853531" expanded="true" signature="15883:16076" ph="UPDATE frien... " />
-            <marker date="1494790853531" expanded="true" signature="16364:16436" ph="SELECT * FRO... friends" />
-            <marker date="1494790853531" expanded="true" signature="16593:16900" ph="..." />
-            <marker date="1494790853531" expanded="true" signature="16964:17268" ph="..." />
-            <marker date="1494790853531" expanded="true" signature="17891:17935" ph="UPDATE users... " />
-            <marker date="1494790853531" expanded="true" signature="18888:18934" ph="INSERT INTO photos... " />
-            <marker date="1494790853531" expanded="true" signature="19301:19342" ph="UPDATE users... " />
-            <marker date="1494790853531" expanded="true" signature="19743:19788" ph="UPDATE users... " />
-            <marker date="1494790853531" expanded="true" signature="20047:20091" ph="UPDATE users... " />
-            <marker date="1494790853531" expanded="true" signature="20506:20550" ph="UPDATE users... " />
-            <marker date="1494790853531" expanded="true" signature="20869:20901" ph="SELECT * FRO... users" />
-            <marker date="1494790853531" expanded="true" signature="21023:24297" ph="..." />
-            <marker date="1494790853531" expanded="true" signature="21063:24282" ph="..." />
-            <marker date="1494790853531" expanded="true" signature="21081:21475" ph="..." />
-            <marker date="1494790853531" expanded="true" signature="21132:21453" ph="..." />
-            <marker date="1494790853531" expanded="false" signature="21171:21183" ph="..." />
-            <marker date="1494790853531" expanded="false" signature="21294:21305" ph="..." />
-            <marker date="1494790853531" expanded="true" signature="21496:21871" ph="..." />
-            <marker date="1494790853531" expanded="true" signature="21547:21849" ph="..." />
-            <marker date="1494790853531" expanded="false" signature="21586:21598" ph="..." />
-            <marker date="1494790853531" expanded="false" signature="21696:21707" ph="..." />
-            <marker date="1494790853531" expanded="true" signature="21892:22269" ph="..." />
-            <marker date="1494790853531" expanded="true" signature="21943:22247" ph="..." />
-            <marker date="1494790853531" expanded="false" signature="21982:21994" ph="..." />
-            <marker date="1494790853531" expanded="false" signature="22090:22101" ph="..." />
-            <marker date="1494790853531" expanded="true" signature="22290:22664" ph="..." />
-            <marker date="1494790853531" expanded="true" signature="22341:22642" ph="..." />
-            <marker date="1494790853531" expanded="false" signature="22380:22392" ph="..." />
-            <marker date="1494790853531" expanded="false" signature="22491:22502" ph="..." />
-            <marker date="1494790853531" expanded="true" signature="22685:23072" ph="..." />
-            <marker date="1494790853531" expanded="true" signature="22736:23050" ph="..." />
-            <marker date="1494790853531" expanded="false" signature="22775:22787" ph="..." />
-            <marker date="1494790853531" expanded="false" signature="22897:22908" ph="..." />
-            <marker date="1494790853531" expanded="true" signature="23093:23472" ph="..." />
-            <marker date="1494790853531" expanded="true" signature="23144:23450" ph="..." />
-            <marker date="1494790853531" expanded="false" signature="23183:23195" ph="..." />
-            <marker date="1494790853531" expanded="false" signature="23295:23306" ph="..." />
-            <marker date="1494790853531" expanded="true" signature="23493:23870" ph="..." />
-            <marker date="1494790853531" expanded="true" signature="23544:23848" ph="..." />
-            <marker date="1494790853531" expanded="false" signature="23583:23595" ph="..." />
-            <marker date="1494790853531" expanded="false" signature="23699:23710" ph="..." />
-            <marker date="1494790853531" expanded="true" signature="23891:24264" ph="..." />
-            <marker date="1494790853531" expanded="true" signature="23942:24242" ph="..." />
-            <marker date="1494790853531" expanded="false" signature="23981:23993" ph="..." />
-            <marker date="1494790853531" expanded="false" signature="24091:24102" ph="..." />
-            <marker date="1494790853531" expanded="true" signature="24368:24400" ph="SELECT * FRO... users" />
-            <marker date="1494790853531" expanded="true" signature="24494:24783" ph="..." />
-            <marker date="1494790853531" expanded="false" signature="24625:24636" ph="..." />
-            <marker date="1494790853531" expanded="true" signature="24823:25404" ph="..." />
-            <marker date="1494790853531" expanded="false" signature="24950:24961" ph="..." />
-            <marker date="1494790853531" expanded="false" signature="25222:25233" ph="..." />
-            <marker date="1494790853531" expanded="true" signature="25504:25538" ph="SELECT * FRO... users" />
-            <marker date="1494790853531" expanded="true" signature="25806:25840" ph="SELECT * FRO... users" />
-            <marker date="1494790853531" expanded="true" signature="26108:26142" ph="SELECT * FRO... users" />
-            <marker date="1494790853531" expanded="true" signature="26462:26496" ph="SELECT * FRO... users" />
-            <marker date="1494790853531" expanded="true" signature="26804:26838" ph="SELECT * FRO... users" />
-            <marker date="1494790853531" expanded="true" signature="27194:27228" ph="SELECT * FRO... users" />
-            <marker date="1494790853531" expanded="true" signature="27567:27590" ph="SELECT * FRO... countries" />
-            <marker date="1494790853531" expanded="true" signature="27782:27811" ph="SELECT * FRO... timezones" />
-            <marker date="1494790853531" expanded="true" signature="28206:28241" ph="SELECT * FRO... photos" />
-            <marker date="1494790853531" expanded="true" signature="28374:28576" ph="..." />
-            <marker date="1494790853531" expanded="false" signature="28487:28512" ph="..." />
-            <marker date="1494790853531" expanded="true" signature="28629:28854" ph="..." />
-            <marker date="1494790853531" expanded="false" signature="28748:28773" ph="..." />
-            <marker date="1494790853531" expanded="true" signature="29306:29341" ph="SELECT * FRO... photos" />
-            <marker date="1494790853531" expanded="true" signature="29474:29676" ph="..." />
-            <marker date="1494790853531" expanded="false" signature="29587:29612" ph="..." />
-            <marker date="1494790853531" expanded="true" signature="29729:29948" ph="..." />
-            <marker date="1494790853531" expanded="false" signature="29842:29867" ph="..." />
-            <marker date="1494790853531" expanded="true" signature="30435:30469" ph="SELECT * FRO... users" />
-            <marker date="1494790853531" expanded="true" signature="30793:30827" ph="SELECT * FRO... users" />
-            <marker date="1494790853531" expanded="true" signature="31144:31176" ph="SELECT * FRO... users" />
-            <marker date="1494790853531" expanded="true" signature="31387:31422" ph="SELECT * FRO... photos" />
-            <marker date="1494790853531" expanded="true" signature="31557:31759" ph="..." />
-            <marker date="1494790853531" expanded="false" signature="31670:31695" ph="..." />
-            <marker date="1494790853531" expanded="true" signature="31814:32039" ph="..." />
-            <marker date="1494790853531" expanded="false" signature="31933:31958" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1044,7 +925,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1052,7 +932,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1060,7 +939,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1084,7 +962,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
           <caret line="34" column="28" lean-forward="false" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1123,10 +1000,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1480500886000" expanded="true" signature="245:301" ph="SELECT * FRO... film" />
-            <marker date="1480500886000" expanded="true" signature="984:1041" ph="SELECT * FRO... serie" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1135,7 +1008,7 @@
         <state relative-caret-position="234">
           <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
           <folding>
-            <element signature="e#117#145#0#PHP" expanded="true" />
+            <element signature="e#117#145#0#PHP" expanded="false" />
             <marker date="1511694007340" expanded="true" signature="774:838" ph="SELECT * FRO... user" />
             <marker date="1511694007340" expanded="true" signature="839:996" ph="SELECT * FRO... user" />
             <marker date="1511694007340" expanded="true" signature="1788:1937" ph="INSERT INTO user... " />
@@ -1147,7 +1020,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="702">
           <caret line="27" column="14" lean-forward="false" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1155,39 +1027,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1092">
           <caret line="42" column="37" lean-forward="false" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
-          <folding>
-            <element signature="e#1788#1794#0#HTML" expanded="true" />
-            <element signature="e#1855#1861#0#HTML" expanded="true" />
-            <element signature="e#1861#1867#0#HTML" expanded="true" />
-            <element signature="e#1867#1873#0#HTML" expanded="true" />
-            <element signature="e#2159#2165#0#HTML" expanded="true" />
-            <element signature="e#2227#2233#0#HTML" expanded="true" />
-            <element signature="e#2233#2239#0#HTML" expanded="true" />
-            <element signature="e#2239#2245#0#HTML" expanded="true" />
-            <element signature="e#2520#2526#0#HTML" expanded="true" />
-            <element signature="e#2596#2602#0#HTML" expanded="true" />
-            <element signature="e#2602#2608#0#HTML" expanded="true" />
-            <element signature="e#2608#2614#0#HTML" expanded="true" />
-            <element signature="e#2888#2894#0#HTML" expanded="true" />
-            <element signature="e#2972#2978#0#HTML" expanded="true" />
-            <element signature="e#2978#2984#0#HTML" expanded="true" />
-            <element signature="e#2984#2990#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/EightRss/Models/Article.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2262">
-          <caret line="92" column="62" lean-forward="false" selection-start-line="92" selection-start-column="62" selection-end-line="92" selection-end-column="62" />
-          <folding>
-            <element signature="e#117#145#0#PHP" expanded="true" />
-            <marker date="1511711428463" expanded="true" signature="1150:1191" ph="SELECT guide... article" />
-            <marker date="1511711428463" expanded="true" signature="1150:1196" ph="SELECT title... article" />
-            <marker date="1511711428463" expanded="true" signature="2121:2278" ph="INSERT INTO article... " />
-            <marker date="1511711428463" expanded="true" signature="2977:3066" ph="SELECT * FRO... article" />
-            <marker date="1511711428463" expanded="true" signature="3269:3305" ph="SELECT * FRO... article" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1199,14 +1038,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/EightRss/Views/content/rss.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EightRss/Views/content/rss.php" />
     <entry file="file://$PROJECT_DIR$/src/EightRss/Controllers/Article.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
@@ -1221,34 +1053,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1924">
           <caret line="74" column="22" lean-forward="true" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="22" />
-          <folding>
-            <element signature="e#597#601#0#HTML" expanded="true" />
-            <element signature="e#630#634#0#HTML" expanded="true" />
-            <element signature="e#666#670#0#HTML" expanded="true" />
-            <element signature="e#681#685#0#HTML" expanded="true" />
-            <element signature="e#717#721#0#HTML" expanded="true" />
-            <element signature="e#732#736#0#HTML" expanded="true" />
-            <element signature="e#768#772#0#HTML" expanded="true" />
-            <element signature="e#783#787#0#HTML" expanded="true" />
-            <element signature="e#819#823#0#HTML" expanded="true" />
-            <element signature="e#832#836#0#HTML" expanded="true" />
-            <element signature="e#2512#2518#0#HTML" expanded="true" />
-            <element signature="e#2579#2585#0#HTML" expanded="true" />
-            <element signature="e#2585#2591#0#HTML" expanded="true" />
-            <element signature="e#2591#2597#0#HTML" expanded="true" />
-            <element signature="e#2934#2940#0#HTML" expanded="true" />
-            <element signature="e#3002#3008#0#HTML" expanded="true" />
-            <element signature="e#3008#3014#0#HTML" expanded="true" />
-            <element signature="e#3014#3020#0#HTML" expanded="true" />
-            <element signature="e#3346#3352#0#HTML" expanded="true" />
-            <element signature="e#3422#3428#0#HTML" expanded="true" />
-            <element signature="e#3428#3434#0#HTML" expanded="true" />
-            <element signature="e#3434#3440#0#HTML" expanded="true" />
-            <element signature="e#3765#3771#0#HTML" expanded="true" />
-            <element signature="e#3849#3855#0#HTML" expanded="true" />
-            <element signature="e#3855#3861#0#HTML" expanded="true" />
-            <element signature="e#3861#3867#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1256,7 +1060,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="28" lean-forward="false" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1264,22 +1067,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
           <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/resources/Materialize.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1040">
-          <caret line="48" column="5" lean-forward="true" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/resources/Launcher.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="695">
-          <caret line="30" column="35" lean-forward="false" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -1297,14 +1084,56 @@
         <state relative-caret-position="416">
           <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="48" />
           <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
+            <element signature="e#40#68#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EightRss/Views/content/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1248">
+          <caret line="48" column="104" lean-forward="false" selection-start-line="48" selection-start-column="104" selection-end-line="48" selection-end-column="104" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EightRss/Views/layout/layout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1196">
+          <caret line="66" column="116" lean-forward="false" selection-start-line="66" selection-start-column="116" selection-end-line="66" selection-end-column="116" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/resources/Materialize.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="669">
+          <caret line="48" column="5" lean-forward="false" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/resources/Launcher.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="669">
+          <caret line="30" column="35" lean-forward="false" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EightRss/Controllers/Admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="910">
+          <caret line="40" column="88" lean-forward="false" selection-start-line="40" selection-start-column="88" selection-end-line="40" selection-end-column="88" />
+          <folding>
+            <element signature="e#122#150#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/EightRss/Models/Flux.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
+        <state relative-caret-position="97">
           <caret line="141" column="33" lean-forward="false" selection-start-line="141" selection-start-column="33" selection-end-line="141" selection-end-column="33" />
           <folding>
             <element signature="e#6#87#0#PHP" expanded="true" />
@@ -1317,40 +1146,25 @@
             <marker date="1511718901600" expanded="true" signature="1940:2099" ph="UPDATE table... " />
             <marker date="1511718901600" expanded="true" signature="1940:2114" ph="UPDATE flux " />
             <marker date="1511718901600" expanded="true" signature="1940:2115" ph="UPDATE table... " />
-            <marker date="1511718901600" expanded="true" signature="1940:2116" ph="UPDATE table... " />
-            <marker date="1511718901600" expanded="true" signature="1940:2410" ph="UPDATE table... " />
             <marker date="1511718901600" expanded="true" signature="2476:2598" ph="UPDATE flux " />
             <marker date="1511718901600" expanded="true" signature="2897:3017" ph="UPDATE flux " />
             <marker date="1511718901600" expanded="true" signature="3491:3526" ph="DELETE FROM " />
-            <marker date="1511718901600" expanded="true" signature="3502:3513" ph="INSERT INTO flux... " />
             <marker date="1511718901600" expanded="true" signature="3763:3781" ph="SELECT * FRO... flux" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/EightRss/Views/layout/layout.php">
+    <entry file="file://$PROJECT_DIR$/src/EightRss/Models/Article.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-31">
-          <caret line="66" column="116" lean-forward="false" selection-start-line="66" selection-start-column="116" selection-end-line="66" selection-end-column="116" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/EightRss/Controllers/Admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="40" column="88" lean-forward="false" selection-start-line="40" selection-start-column="88" selection-end-line="40" selection-end-column="88" />
+        <state relative-caret-position="383">
+          <caret line="134" column="5" lean-forward="true" selection-start-line="134" selection-start-column="5" selection-end-line="134" selection-end-column="5" />
           <folding>
-            <element signature="e#122#150#0#PHP" expanded="true" />
+            <element signature="e#117#145#0#PHP" expanded="true" />
+            <marker date="1511766829692" expanded="true" signature="1127:1216" ph="SELECT * FRO... article" />
+            <marker date="1511766829692" expanded="true" signature="1420:1456" ph="SELECT * FRO... article" />
+            <marker date="1511766829692" expanded="true" signature="1748:1794" ph="SELECT title... article" />
+            <marker date="1511766829692" expanded="true" signature="2767:2924" ph="INSERT INTO article... " />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/EightRss/Views/content/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="48" column="104" lean-forward="false" selection-start-line="48" selection-start-column="104" selection-end-line="48" selection-end-column="104" />
-          <folding />
         </state>
       </provider>
     </entry>
