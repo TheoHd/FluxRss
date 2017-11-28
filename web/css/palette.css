@@ -41,6 +41,6 @@
 }
 
 /* Overwritten materialize properties */
-.active{
+li.active{
 	background-color: #329572 !important;
 }

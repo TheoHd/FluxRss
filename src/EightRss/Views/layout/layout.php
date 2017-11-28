@@ -3,6 +3,11 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta property="og:url"           content="https://www.your-domain.com/your-page.html" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="Your Website Title" />
+    <meta property="og:description"   content="Your description" />
+    <meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" />
     <title>EightRss</title>
 
     <!-- CSS  -->
@@ -83,6 +88,7 @@
 <script src="<?= BASE_URL ?>/web/js/jquery-3.2.1.min.js"></script>
 <script src="<?= BASE_URL ?>/web/js/materialize.js"></script>
 <script src="<?= BASE_URL ?>/web/js/init.js"></script>
+<script src="<?= BASE_URL ?>/web/js/facebook.js"></script>
 <script>
     $(document).ready(function () {
         $('select').material_select();

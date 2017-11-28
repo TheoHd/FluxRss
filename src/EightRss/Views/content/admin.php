@@ -1,3 +1,4 @@
+<!--TODO Verify functions-->
 <div class="container">
     <div class="row">
         <div class="col m12 s12">
@@ -58,3 +59,4 @@
             </div>
         </div>
     </div>
+</div>

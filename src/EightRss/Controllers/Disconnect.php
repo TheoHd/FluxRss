@@ -13,6 +13,7 @@ class Disconnect extends Functions
         $user = new User();
         if ($user->isConnected()) {
             $user->disconnect();
+            $user->unsetCookie();
             $this->redirect('/home');
         }
     }
