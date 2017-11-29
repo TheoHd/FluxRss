@@ -20,15 +20,30 @@ class Admin extends Functions
         $f = new Flux();
         $user = new User();
         $m = new Materialize();
+        $alert = "";
+        $error = "";
+
         if ($user->isConnected() && $user->isAdmin()) {
             if (isset($_POST['submit_add_flux'])) {
-                $f->addFlux();
+                if ($_POST['url'] == "") {
+                    $error = "Aucune URL n'a été rentrée";
+                } else {
+                    if (!preg_match('#((https?|http)://(\S*?\.\S*?))([\s)\[\]{},;"\':<]|\.\s|$)#i',$_POST['url'])) {
+                        $error = "L'URL rentrée est invalide";
+                    }
+                    else{
+                        $f->addFlux();
+                        $alert = "Le flux a bien été ajouté";
+                    }
+                }
             }
             if (isset($_POST['submit_modify_flux'])) {
                 $f->modifyFlux();
+                $alert = "Le flux a bien été modifié";
             }
             if (isset($_POST['submit_delete_flux'])) {
                 $f->deleteFlux();
+                $alert = "Le flux a bien été supprimé";
             }
             // Formulaire d'ajout de flux
             $form = $m->inputMtz('name', 'Nom du flux', 'text');
@@ -46,7 +61,9 @@ class Admin extends Functions
                 'flux' => $f,
                 'form' => $form,
                 'form2' => $form2,
-                'form3' => $form3
+                'form3' => $form3,
+                'alert' => $alert,
+                'error' => $error
             ));
         } else {
             $this->redirect('/home');

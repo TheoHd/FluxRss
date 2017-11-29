@@ -13,6 +13,7 @@
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="<?= BASE_URL ?>/web/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="<?= BASE_URL ?>/web/css/animate.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="<?= BASE_URL ?>/web/css/font-awesome.min.css" type="text/css" rel="stylesheet"
           media="screen,projection"/>
     <link href="<?= BASE_URL ?>/web/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -25,6 +26,7 @@
                                                                                    src="<?= BASE_URL ?>/web/img/logo.png"
                                                                                    alt=""></a>
         <ul class="right hide-on-med-and-down">
+            <li><a href="<?= BASE_URL ?>/home"><span class="color-3">Accueil</span></a></li>
             <?php if ($object['user']->isAdmin()) : ?>
                 <li><a href="<?= BASE_URL ?>/admin"><span class="color-3">Administration</span></a></li>
             <?php endif ?>
@@ -35,10 +37,10 @@
                 <li><a href="<?= BASE_URL ?>/register"><span class="color-3">S'inscrire</span></a></li>
                 <li><a href="<?= BASE_URL ?>/login"><span class="color-3">Se connecter</span></a></li>
             <?php endif ?>
-            <li><a href="#footer"><span class="color-3">À propos</span></a></li>
         </ul>
 
         <ul id="nav-mobile" class="side-nav background-color-4">
+            <li><a href="<?= BASE_URL ?>/home"><span class="color-3">Accueil</span></a></li>
             <?php if ($object['user']->isAdmin()) : ?>
                 <li><a href="<?= BASE_URL ?>/admin"><span class="color-3">Administration</span></a></li>
             <?php endif ?>
@@ -49,8 +51,6 @@
                 <li><a href="<?= BASE_URL ?>/register"><span class="color-3">S'inscrire</span></a></li>
                 <li><a href="<?= BASE_URL ?>/login"><span class="color-3">Se connecter</span></a></li>
             <?php endif ?>
-
-            <li><a href="#footer"><span class="color-3">À propos</span></a></li>
         </ul>
         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
@@ -69,10 +69,10 @@
         </div>
         <div class="footer-copyright">
             <div class="center">
-                <p>Par <a class="color-3" href="http://theohuchard.com">Théo Huchard </a>© 2017 Tous droits réservés
+                <p>Par <a class="color-3" target="_blank" href="http://theohuchard.com">Théo Huchard </a>© 2017 Tous droits réservés
                     <br>
                     <small>Le logo a été créé sur
-                        <a class="color-3" href="http://logomakr.com"title="Logo Makr">
+                        <a class="color-3" target="_blank" href="http://logomakr.com"title="Logo Makr">
                             LogoMakr.com
                         </a>
                         https://logomakr.com/6QWc2Y

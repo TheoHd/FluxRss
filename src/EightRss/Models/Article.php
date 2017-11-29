@@ -122,7 +122,7 @@ class Article
         $guide = $this->verifyPropertyExistence($item->guide);
         $description = $this->verifyPropertyExistence($item->description);
         $link = $this->verifyLinkExistence($item->link);
-        $image_url = $this->verifyImageUrlExistence($item->enclosure->attributes()->url, $item->enclosure->attributes());
+        $image_url = $this->verifyImageUrlExistence($item->enclosure, $item->enclosure->attributes());
         $request = $db->prepare('INSERT INTO article(title,description,pubDate,guide,link,category,image_url) 
         VALUES (:title,:description,:pubDate,:guide,:link,:category,:image_url)');
         $request->bindParam(':title', $title, PDO::PARAM_STR);

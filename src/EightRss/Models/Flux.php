@@ -10,6 +10,7 @@ namespace EightRss\Models;
 
 use App\Resources\Functions;
 use PDO;
+use Exception;
 
 /**
  * Class Flux
@@ -46,14 +47,17 @@ class Flux
     private function dbFluxItems()
     {
         global $db;
+        $urlRegex = '#((https?|http)://(\S*?\.\S*?))([\s)\[\]{},;"\':<]|\.\s|$)#i';
         $req1 = $db->query("SELECT * FROM flux");
-        $base_array[] = [];
+        $baseArray[] = [];
         $i = 1;
         while ($response = $req1->fetch()) {
-            $base_array[$i] = simplexml_load_file($response['url']);
-            $i++;
+            if(preg_match($urlRegex,$response['url'])){
+                $baseArray[$i] = simplexml_load_file($response['url']);
+                $i++;
+            }
         }
-        return $base_array;
+        return $baseArray;
     }
 
     /**
@@ -86,37 +90,32 @@ class Flux
     public function modifyFlux()
     {
         global $db;
-        $oldname = $_POST['oldname'];
+        $id_f = $_POST['flux'];
         $name = $_POST['name'];
         $url = $_POST['url'];
         if ($name != "" && $url != "") {
             $request = $db->prepare('UPDATE flux
                                     SET name = :name 
                                     AND url = :url
-                                    WHERE name = :oldname');
-            $request->bindParam(':oldname', $oldname, PDO::PARAM_STR);
+                                    WHERE id_f = :id_f');
+            $request->bindParam(':id_f', $id_f, PDO::PARAM_STR);
             $request->bindParam(':name', $name, PDO::PARAM_STR);
             $request->bindParam(':url', $url, PDO::PARAM_STR);
             $request->execute();
-            $this->f->redirect('/admin');
         } elseif ($name != "" && $url == "") {
             $request = $db->prepare('UPDATE flux
                                     SET name = :name
-                                    WHERE name = :oldname');
-            $request->bindParam(':oldname', $oldname, PDO::PARAM_STR);
+                                    WHERE id_f = :id_f');
+            $request->bindParam(':id_f', $id_f, PDO::PARAM_STR);
             $request->bindParam(':name', $name, PDO::PARAM_STR);
             $request->execute();
-            $this->f->redirect('/admin');
         } elseif ($url != "" && $name == "") {
             $request = $db->prepare('UPDATE flux
                                     SET url = :url
-                                    WHERE name = :oldname');
-            $request->bindParam(':oldname', $oldname, PDO::PARAM_STR);
+                                    WHERE id_f = :id_f');
+            $request->bindParam(':id_f', $id_f, PDO::PARAM_STR);
             $request->bindParam(':url', $url, PDO::PARAM_STR);
             $request->execute();
-            $this->f->redirect('/admin');
-        } else {
-            $this->f->redirect('/admin');
         }
     }
 
@@ -126,9 +125,9 @@ class Flux
     public function deleteFlux()
     {
         global $db;
-        $name = $_POST['name'];
-        $request = $db->prepare('DELETE FROM flux WHERE name = :name');
-        $request->bindParam(':name', $name, PDO::PARAM_STR);
+        $id_f = $_POST['name'];
+        $request = $db->prepare('DELETE FROM flux WHERE id_f = :id_f');
+        $request->bindParam(':id_f', $id_f, PDO::PARAM_STR);
         $request->execute();
     }
 

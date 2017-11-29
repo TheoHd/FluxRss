@@ -15,6 +15,9 @@ class Profile extends Functions
 {
     public function start()
     {
+        if(!isset($_SESSION['id'])){
+            $this->redirect('\home');
+        }
         $user = new User();
         $this->display('profile', array('user' => $user));
     }

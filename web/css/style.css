@@ -7,7 +7,7 @@ nav ul a,
 nav .brand-logo {
     color: #444;
 }
-@media (max-width: 992px) {
+@media (max-width: 600px) {
     .eight-rsp-img {
         display: none;
     }

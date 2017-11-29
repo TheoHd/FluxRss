@@ -26,7 +26,7 @@
                                     <span>
                                         <div class="teal-text">
                                                 <a class="teal-text article-links"
-                                                   href="<?= BASE_URL ?>/article/share/<?= $r['id_a'] ?>">
+                                                   href="<?= BASE_URL ?>/article/<?= $r['id_a'] ?>#share">
                                                     <i class="fa fa-share"></i>&nbsp;
                                                     Partager&nbsp;&nbsp;&nbsp;
                                                 </a>
@@ -51,7 +51,7 @@
                             </div>
                         </div>
                     </article>
-                <?php endwhile ?>
+                <?php endwhile; ?>
                 <div class="col m12 s12 center">
                     <ul class="pagination">
                         <li class="waves-effect">

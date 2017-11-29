@@ -10,7 +10,7 @@ namespace EightRss\Controllers;
 
 use App\Resources\Functions;
 use EightRss\Models\User;
-use App\Materialize;
+use App\Resources\Materialize;
 
 class Register extends Functions
 {
