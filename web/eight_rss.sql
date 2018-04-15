@@ -20,6 +20,9 @@ SET time_zone = "+00:00";
 -- Database: `eight_rss`
 --
 
+CREATE DATABASE eight_rss;
+USE eight_rss;
+
 -- --------------------------------------------------------
 
 --
