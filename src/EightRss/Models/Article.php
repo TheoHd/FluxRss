@@ -55,17 +55,17 @@ class Article
      * @param $c_page
      * @return \PDOStatement
      */
-    public function displayArticles($per_page,$c_page)
+    public function displayArticles($per_page, $c_page)
     {
         global $db;
         $nb_art = $this->nbArticles()->fetch();
-        $l_elem = ($c_page-1)*$per_page;
-        $nb_page = ceil($nb_art[0]/$per_page);
+        $l_elem = ($c_page - 1) * $per_page;
+        $nb_page = ceil($nb_art[0] / $per_page);
         $request = $db->prepare('SELECT * FROM article ORDER BY YEAR(pubDate) DESC, MONTH(pubDate) DESC, DAY(pubDate) DESC, TIME(pubDate) DESC LIMIT :l_elem, :per_page');
-        $request->bindParam(':l_elem',$l_elem,PDO::PARAM_INT);
-        $request->bindParam(':per_page',$per_page,PDO::PARAM_INT);
+        $request->bindParam(':l_elem', $l_elem, PDO::PARAM_INT);
+        $request->bindParam(':per_page', $per_page, PDO::PARAM_INT);
         $request->execute();
-        return array($request,$nb_page);
+        return array($request, $nb_page);
     }
 
     /**
@@ -168,8 +168,8 @@ class Article
      */
     private function verifyImageUrlExistence($url, $attributes)
     {
-        if (isset($url) && !empty($attributes) && !is_null($attributes)) {
-            return $url;
+        if ($url && $attributes) {
+            return $attributes->url;
         } else {
             return null;
         }
