@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../.idea/Main.iml" filepath="$PROJECT_DIR$/../.idea/Main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/etude_FluxRss.iml" filepath="$PROJECT_DIR$/.idea/etude_FluxRss.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../professionnel_Portfolio/.idea/professionnel_Portfolio.iml" filepath="$PROJECT_DIR$/../professionnel_Portfolio/.idea/professionnel_Portfolio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/rss-flow.iml" filepath="$PROJECT_DIR$/.idea/rss-flow.iml" />
     </modules>
   </component>
 </project>
